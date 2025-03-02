@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Asyl Bala - Главная страница</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">ASYL<span>BALA</span></div>
+                <nav>
+                    <ul>
+                        <li><a href="#" class="nav-link">Главная</a></li>
+                        <li><a href="#about" class="nav-link">О нас</a></li>
+                        <li><a href="#services" class="nav-link">Услуги</a></li>
+                        <li><a href="#contact" class="nav-link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-btn">☰</div>
+            </div>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h1>ASYLBALA</h1>
+            <p>Ваш надежный партнер в сфере бизнеса и инноваций. Мы предлагаем качественные услуги и индивидуальный подход к каждому клиенту.</p>
+            <a href="#" class="btn">Узнать больше</a>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Наши услуги</h2>
+                <p>Мы предлагаем широкий спектр услуг для удовлетворения потребностей наших клиентов</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-img"></div>
+                    <div class="service-content">
+                        <h3>Услуга 1</h3>
+                        <p>Описание услуги и ее преимуществ для клиентов. Подробная информация о том, что включает в себя данная услуга.</p>
+                        <a href="#" class="btn">Подробнее</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img"></div>
+                    <div class="service-content">
+                        <h3>Услуга 2</h3>
+                        <p>Описание услуги и ее преимуществ для клиентов. Подробная информация о том, что включает в себя данная услуга.</p>
+                        <a href="#" class="btn">Подробнее</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img"></div>
+                    <div class="service-content">
+                        <h3>Услуга 3</h3>
+                        <p>Описание услуги и ее преимуществ для клиентов. Подробная информация о том, что включает в себя данная услуга.</p>
+                        <a href="#" class="btn">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-img"></div>
+                <div class="about-text">
+                    <h2>О компании</h2>
+                    <p>ASYLBALA - это компания с многолетним опытом работы на рынке Казахстана. Мы специализируемся на предоставлении высококачественных услуг для бизнеса и частных лиц.</p>
+                    <p>Наша миссия - помогать клиентам достигать их целей, предоставляя инновационные решения и профессиональную поддержку на каждом этапе сотрудничества.</p>
+                    <p>Мы гордимся нашей командой профессионалов, которые обладают глубокими знаниями и богатым опытом в своей области.</p>
+                    <a href="#" class="btn">Узнать больше</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Свяжитесь с нами</h2>
+                <p>Если у вас есть вопросы или вы хотите получить консультацию, заполните форму ниже</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Контактная информация</h3>
+                    <p>Адрес: г. Астана, ул. Боталы, 26/3</p>
+                    <p>Телефон: +7 (707) 924-86-84</p>
+                    <p>Время работы: Пн-Пт, 8:00 - 18:30</p>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <input type="text" placeholder="Ваше имя">
+                        <input type="email" placeholder="Ваш email">
+                        <input type="tel" placeholder="Ваш телефон">
+                        <textarea placeholder="Ваше сообщение"></textarea>
+                        <button type="submit" class="btn">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">ASYL<span>BALA</span></div>
+                <div class="social-links">
+                    <a href="#">FB</a>
+                    <a href="#">IG</a>
+                    <a href="#">TW</a>
+                    <a href="#">LI</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ASYLBALA. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+    <a href="#" class="back-to-top">↑</a>
+    <script>
+        // Мобильное меню
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const nav = document.querySelector('nav');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+
+        // Плавная прокрутка
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href');
+                if (targetId !== '#') {
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }
+                if (window.innerWidth <= 768) {
+                    nav.classList.remove('active');
+                }
+            });
+        });
+
+        // Кнопка "Наверх"
+        const backToTopButton = document.querySelector('.back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+
+        backToTopButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Анимация появления элементов при прокрутке
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observerCallback = (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                    observer.unobserve(entry.target);
+                }
+            });
+        };
+
+        const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+        document.querySelectorAll('.service-card, .about-content, .contact-content').forEach(element => {
+            element.style.opacity = '0';
+            element.style.transform = 'translateY(50px)';
+            element.style.transition = 'opacity 0.5s, transform 0.5s';
+            observer.observe(element);
+        });
+
+        // Простая валидация формы
+        const contactForm = document.querySelector('.contact-form form');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = contactForm.querySelector('input[type="text"]').value;
+            const email = contactForm.querySelector('input[type="email"]').value;
+            const phone = contactForm.querySelector('input[type="tel"]').value;
+            const message = contactForm.querySelector('textarea').value;
+
+            if (name && email && phone && message) {
+                alert('Спасибо за ваше сообщение! Мы свяжемся с вами в ближайшее время.');
+                contactForm.reset();
+            } else {
+                alert('Пожалуйста, заполните все поля формы.');
+            }
+        });
+    </script>
+</body>
+</html>
